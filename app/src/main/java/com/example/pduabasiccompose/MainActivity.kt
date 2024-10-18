@@ -52,13 +52,13 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
             .padding(top = 0.dp)) {
         Text("Login",
             fontSize = 60.sp,
-            fontWeight = FontWeight.Bold),
+            fontWeight = FontWeight.Bold)
 
         Spacer(modifier = Modifier.padding(4.dp))
 
         Text("Ini adalah halaman login",
-            fontSize = 40.sp,
-            fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
+            fontSize = 20.sp,
+
             )
         Spacer(modifier = Modifier.padding(20.dp))
 

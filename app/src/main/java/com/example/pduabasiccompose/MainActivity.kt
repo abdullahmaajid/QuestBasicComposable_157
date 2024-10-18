@@ -42,7 +42,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
 fun BasicColoumn(modifier: Modifier = Modifier) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -50,11 +49,11 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
         modifier = Modifier
             .fillMaxSize()
             .padding(top = 50.dp)) {
-        Text("Hello",
+        Text("Login",
             fontSize = 100.sp,
             fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.padding(18.dp))
-        Text("JETPACK COMPOSE",
+        Text("Ini adalah halaman login",
             fontSize = 40.sp,
             fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
             )

@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -58,14 +59,17 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
 
         Text("Ini adalah halaman login",
             fontSize = 20.sp,
-
             )
-        Spacer(modifier = Modifier.padding(20.dp))
+        Spacer(modifier = Modifier.padding(30.dp))
 
         Image(
             painter = painterResource(id = R.drawable.logoumy),
             contentDescription = "",
-            modifier = Modifier.clip(CircleShape))
+            modifier = Modifier
+                .size(250.dp)
+                .clip(CircleShape)
+        )// Set the desired size here, e.g., 100dp
+
 
         Text("Nama",
             fontSize = 100.sp,

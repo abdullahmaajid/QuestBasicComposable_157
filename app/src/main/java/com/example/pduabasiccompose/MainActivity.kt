@@ -12,6 +12,10 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.layout.ContentScale
+
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -19,7 +23,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -53,15 +59,15 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(top = 0.dp)) {
         Text("Login",
-            fontSize = 60.sp,
+            fontSize = 55.sp,
             fontWeight = FontWeight.Bold)
 
-        Spacer(modifier = Modifier.padding(4.dp))
+        Spacer(modifier = Modifier.padding(2.dp))
 
         Text("Ini adalah halaman login",
-            fontSize = 20.sp,
+            fontSize = 18.sp,
             )
-        Spacer(modifier = Modifier.padding(30.dp))
+        Spacer(modifier = Modifier.padding(20.dp))
 
         Image(
             painter = painterResource(id = R.drawable.logoumy),
@@ -74,7 +80,7 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
 
         Text("Nama",
             fontSize = 20.sp,
-            fontWeight = FontWeight.Bold)
+            fontWeight = FontWeight.Normal)
         Spacer(modifier = Modifier.padding(0.dp))
 
         Text("Abdullah Maajid",
@@ -87,13 +93,28 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.padding(0.dp))
 
         Text("20220140157",
-            fontSize = 50.sp)
-        Spacer(modifier = Modifier.padding(18.dp))
+            fontSize = 40.sp)
+        Spacer(modifier = Modifier.padding(0.dp))
 
         Image(
             painter = painterResource(id = R.drawable.foto),
             contentDescription = "",
-            modifier = Modifier.clip(CircleShape))
+            modifier = Modifier
+                .padding(16.dp)
+                .size(235.dp, 800.dp) // Increased size for a larger oval shape
+                .clip(RoundedCornerShape(150.dp)) // Round corners for a smoother oval shape
+                .graphicsLayer(
+                    alpha = 1.0f, // Set transparency for crumple effect
+                    translationX = -10f, // Slight positional effect
+                    scaleX = 1.1f, // Increased scale factor for width
+                    scaleY = 1.1f  // Increased scale factor for height
+                )
+                .fillMaxSize(), // Optional: This may be adjusted based on your layout
+            contentScale = ContentScale.Crop // Crop the image to fit the oval shape
+        )
+
+
+        // Rounded corners for the oval shape
 
     }
 }

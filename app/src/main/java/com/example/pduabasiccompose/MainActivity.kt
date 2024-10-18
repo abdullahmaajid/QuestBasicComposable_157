@@ -80,6 +80,11 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.padding(18.dp))
 
+        Image(
+            painter = painterResource(id = R.drawable.foto),
+            contentDescription = "",
+            modifier = Modifier.clip(CircleShape))
+
     }
 }
 

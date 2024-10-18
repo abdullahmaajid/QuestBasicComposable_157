@@ -84,10 +84,10 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
         )
 
         // Use Color.Red to set the text color to red
-        Spacer(modifier = Modifier.padding(20.dp))
+        Spacer(modifier = Modifier.padding(0.dp))
 
         Text("20220140157",
-            fontSize = 100.sp)
+            fontSize = 50.sp)
         Spacer(modifier = Modifier.padding(18.dp))
 
         Image(

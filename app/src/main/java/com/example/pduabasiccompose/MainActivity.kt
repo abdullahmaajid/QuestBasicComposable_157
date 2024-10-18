@@ -42,6 +42,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Composable
 fun BasicColoumn(modifier: Modifier = Modifier) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -60,7 +61,7 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.padding(20.dp))
 
         Image(
-            painter = painterResource(id = R.drawable.coba),
+            painter = painterResource(id = R.drawable.logoumy),
             contentDescription = "",
             modifier = Modifier.clip(CircleShape))
 

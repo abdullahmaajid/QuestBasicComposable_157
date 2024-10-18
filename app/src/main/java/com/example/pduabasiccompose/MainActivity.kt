@@ -104,10 +104,10 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
                 .size(235.dp, 800.dp) // Increased size for a larger oval shape
                 .clip(RoundedCornerShape(150.dp)) // Round corners for a smoother oval shape
                 .graphicsLayer(
-                    alpha = 1.0f, // Set transparency for crumple effect
-                    translationX = -10f, // Slight positional effect
-                    scaleX = 1.1f, // Increased scale factor for width
-                    scaleY = 1.1f  // Increased scale factor for height
+                    alpha = 1f, // Set transparency for crumple effect
+                    translationX = 1f, // Slight positional effect
+                    scaleX = 1f, // Increased scale factor for width
+                    scaleY = 1f  // Increased scale factor for height
                 )
                 .fillMaxSize(), // Optional: This may be adjusted based on your layout
             contentScale = ContentScale.Crop // Crop the image to fit the oval shape
@@ -117,14 +117,6 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
         // Rounded corners for the oval shape
 
     }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
 }
 
 

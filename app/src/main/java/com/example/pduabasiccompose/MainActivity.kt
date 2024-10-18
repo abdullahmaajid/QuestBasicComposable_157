@@ -19,6 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -78,7 +79,11 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
 
         Text("Abdullah Maajid",
             fontSize = 18.sp,
-            fontWeight = FontWeight.Bold)
+            fontWeight = FontWeight.Bold,
+            color = Color.Red // Set the color here
+        )
+
+        // Use Color.Red to set the text color to red
         Spacer(modifier = Modifier.padding(20.dp))
 
         Text("20220140157",

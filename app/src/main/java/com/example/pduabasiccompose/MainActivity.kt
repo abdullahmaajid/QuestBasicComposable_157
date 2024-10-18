@@ -49,11 +49,13 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = 50.dp)) {
+            .padding(top = 0.dp)) {
         Text("Login",
-            fontSize = 100.sp,
-            fontWeight = FontWeight.Bold)
-        Spacer(modifier = Modifier.padding(18.dp))
+            fontSize = 60.sp,
+            fontWeight = FontWeight.Bold),
+
+        Spacer(modifier = Modifier.padding(4.dp))
+
         Text("Ini adalah halaman login",
             fontSize = 40.sp,
             fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,

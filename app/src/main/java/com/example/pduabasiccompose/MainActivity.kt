@@ -69,21 +69,20 @@ fun BasicColoumn(modifier: Modifier = Modifier) {
                 .size(250.dp)
                 .clip(CircleShape)
         )// Set the desired size here, e.g., 100dp
-
+        Spacer(modifier = Modifier.padding(5.dp))
 
         Text("Nama",
-            fontSize = 100.sp,
+            fontSize = 20.sp,
             fontWeight = FontWeight.Bold)
-        Spacer(modifier = Modifier.padding(18.dp))
+        Spacer(modifier = Modifier.padding(28.dp))
 
         Text("Abdullah Maajid",
             fontSize = 100.sp,
             fontWeight = FontWeight.Bold)
-        Spacer(modifier = Modifier.padding(18.dp))
+        Spacer(modifier = Modifier.padding(20.dp))
 
         Text("20220140157",
-            fontSize = 100.sp,
-            fontWeight = FontWeight.Bold)
+            fontSize = 100.sp)
         Spacer(modifier = Modifier.padding(18.dp))
 
         Image(
